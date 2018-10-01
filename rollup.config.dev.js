@@ -3,11 +3,14 @@ import commonjs from 'rollup-plugin-commonjs';
 
 export default {
   input: './lib/index.js',
-  output: {
+  output: [{
     file: './flyd.js',
     name: 'flyd',
     format: 'umd'
-  },
+  }, {
+    file: './flyd.es.js',
+    format: 'es'
+  }],
   plugins: [
     resolve(),
     commonjs()

@@ -1,9 +1,3 @@
-(function (global, factory) {
-	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
-	typeof define === 'function' && define.amd ? define(factory) :
-	(global.flyd = factory());
-}(this, (function () { 'use strict';
-
 function _arity(n, fn) {
   /* eslint-disable no-unused-vars */
   switch (n) {
@@ -997,6 +991,4 @@ StreamTransformer.prototype['@@transducer/step'] = function(s, v) { return v; };
 
 var lib = flyd;
 
-return lib;
-
-})));
+export default lib;
