@@ -26,9 +26,12 @@
     "rollup-plugin-commonjs": "^8.3.0",
     "rollup-plugin-node-resolve": "^3.0.3",
     "rollup-plugin-uglify": "^3.0.0",
-    "transducers.js": "0.3.x"
+    "transducers.js": "0.3.x",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
   },
   "scripts": {
+    "webpack": "webpack && node dist/main.js",
     "test-lib": "mocha",
     "test": "eslint --fix lib/ test/ module/ && mocha test/*.js module/**/test/*.js",
     "docs": "documentation -f md lib/index.js > API.md",
